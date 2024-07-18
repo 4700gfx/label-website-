@@ -39,7 +39,8 @@ header {
 }
 
 header img {
-  height: 50px;
+  height: 60px;
+  object-fit: fill;
 }
 
 nav {
