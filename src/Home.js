@@ -14,7 +14,6 @@ const Home = () => {
         This is the 4700 Enterprises Website. Here you can find information on your favorite artist, releases and more!. Consider this as a hub for everything 4700! You can visit our offical Merch Store for 4700 Gear and Accesories. 
         </p>
         <button>Learn More</button>
-        <button>Contact Us</button>
       </div>
     </div>
   );

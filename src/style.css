@@ -67,18 +67,54 @@
 
 /* About Us Style Sheet */
 
+.about-us-container h1{
+  color: var(--secondary-color);
+  font-size: 35px;
+  margin-top: 50px;
+}
+
+
 .about-us-container {
   padding: 20px;
   background-color: var(--black-color);
   text-align: center;
-  margin-top: 30px;
-  height: 50vh;
+  height: 80vh;
 }
 
-.about-us-container h1{
-  color: white;
-  font-size: 36px;
+
+
+.mission-statement {
+  position: relative;
+  background-image: url('./assets/images/vinyl.webp'); /* Use a high-resolution image */
+  background-size: cover; /* Adjusts the image to cover the entire background */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+  padding: 20px; /* Adjust the padding as needed */
+  color: var(--secondary-color); /* Ensures text color is readable */
 }
+
+.mission-statement::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 1; /* Ensure the overlay is above the background image but below the text */
+}
+
+.mission-statement p {
+  position: relative;
+  z-index: 2; /* Ensure the text is above the overlay */
+  color: var(--secondary-color);
+  font-size: 16px;
+  margin: 15px auto;
+  margin-bottom: 100px;
+  width: 50%;
+}
+
+
 
 
 .timeline {
@@ -89,7 +125,7 @@
   overflow-x: auto; /* Allow horizontal scrolling if necessary */
   padding: 20px 0;
   width: 80%;
-  margin: 15px auto;
+  margin: 10px auto;
 }
 
 .timeline-event {
@@ -99,6 +135,11 @@
   margin: 0 20px;
   flex-shrink: 0; /* Prevent shrinking */
   width: 300px; /* Set a fixed width for each event */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.timeline-event:hover {
+  transform: translateY(-10px); /* Lift the event on hover */
 }
 
 .timeline-content {
@@ -107,34 +148,24 @@
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 10px;
+  transition: box-shadow 0.3s; /* Smooth transition for hover effect */
 }
-
 
 .timeline-content:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
 }
 
-
 .timeline img {
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
-  margin-top: 20px;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s; /* Smooth transition for hover effect */
 }
 
 .timeline img:hover {
   transform: scale(1.1); /* Zoom the image on hover */
-
 }
 
-.timeline-event::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 6px;
-  background-color: #ccc;
-  z-index: -1;
-}
+
