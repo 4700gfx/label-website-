@@ -30,7 +30,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background: linear-gradient(to right, #565454, #333);
+  background: linear-gradient(to right, #565454, #625b5b);
   color: white;
   border-radius: 35px; /* Rounded borders */
   margin: 20px auto; /* Margin from the top */
@@ -59,4 +59,8 @@ nav li {
 nav li:hover {
   background-color: black; /* Change background color on hover */
   color: white; /* Ensure text remains readable */
+}
+
+video{
+  width: 50%;
 }

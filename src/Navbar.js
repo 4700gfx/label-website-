@@ -1,5 +1,8 @@
 import React from 'react'
 import logo from './assets/images/logo.png'
+import instagramLogo from './assets/images/instagram.png'
+import facebookLogo from './assets/images/facebook.png'
+import youtubeLogo from './assets/images/youtube.png'
 
 const Navbar = () => {
   return (
@@ -12,6 +15,12 @@ const Navbar = () => {
         <li>Artist</li>
         <li>Contact Us</li>
       </nav>
+      <div className='nav-buttons'>
+        <img src={instagramLogo} alt="logo" />
+        <img src={facebookLogo} alt="logo" />
+        <img src={youtubeLogo} alt="logo" />
+      </div>
+
     </header>
   )
 }
