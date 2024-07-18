@@ -1,5 +1,5 @@
 :root{
-  font-family: "Poppins", sans-serif;
+  font-family: "DM Sans", sans-serif;
   --white-color: rgb(236, 234, 234);
   --black-color: #000000;
   --primary-color: #868686;
@@ -18,7 +18,7 @@
 .home-container {
   position: relative;
   width: 80%;
-  height: 100vh; /* Adjust height as needed */
+  height: 80vh; /* Adjust height as needed */
   margin: 10px auto;
 }
 

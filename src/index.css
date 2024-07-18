@@ -1,5 +1,6 @@
 :root{
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */ 
+  font-family: "DM Sans", sans-serif;
   --white-color: rgb(236, 234, 234);
   --black-color: #000000;
   --primary-color: #868686;
@@ -49,7 +50,7 @@ nav {
 nav li {
   margin: 0 15px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   transition: background-color 0.3s;
   padding: 10px 12px;

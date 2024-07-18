@@ -13,6 +13,7 @@ const Navbar = () => {
         <li>About Us</li>
         <li>Latest Releases</li>
         <li>Artist</li>
+        <li>Store</li>
         <li>Contact Us</li>
       </nav>
       <div className='nav-buttons'>
