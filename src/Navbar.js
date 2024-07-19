@@ -1,14 +1,24 @@
-import React from 'react'
-import logo from './assets/images/logo.png'
-import instagramLogo from './assets/images/instagram.png'
-import facebookLogo from './assets/images/facebook.png'
-import youtubeLogo from './assets/images/youtube.png'
+import React, { useState } from 'react';
+import logo from './assets/images/logo.png';
+import instagramLogo from './assets/images/instagram.png';
+import facebookLogo from './assets/images/facebook.png';
+import youtubeLogo from './assets/images/youtube.png';
+import { FaBars, FaTimes } from 'react-icons/fa'; // Icons for the hamburger menu
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <header className='nav-container'>
       <img src={logo} alt="logo" />
-      <nav>
+      <button className='hamburger-menu' onClick={toggleMenu} aria-label="Menu">
+        {isOpen ? <FaTimes /> : <FaBars />}
+      </button>
+      <nav className={`nav-menu ${isOpen ? 'active' : ''}`}>
         <li>Home</li>
         <li>About Us</li>
         <li>Latest Releases</li>
@@ -17,13 +27,12 @@ const Navbar = () => {
         <li>Contact Us</li>
       </nav>
       <div className='nav-buttons'>
-        <img src={instagramLogo} alt="logo" />
-        <img src={facebookLogo} alt="logo" />
-        <img src={youtubeLogo} alt="logo" />
+        <img src={instagramLogo} alt="instagram logo" />
+        <img src={facebookLogo} alt="facebook logo" />
+        <img src={youtubeLogo} alt="youtube logo" />
       </div>
-
     </header>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
