@@ -6,12 +6,34 @@
   --secondary-color: #ebe9e9;
 }
 
+.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.timeline-event,
+.service-card {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.about-us-container.animate .timeline-event,
+.mission-services-container.animate .service-card {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+
+
+
 
 /* Home Section Stylesheet */
 
 
 .nav-buttons img{
-  height: 35px;
+  height: 30px;
   margin-inline-end: 15px;
 }
 
@@ -213,6 +235,7 @@
   color: var(--secondary-color);
   margin: 10px auto;
   width: 50%;
+  font-size: 16.5px;
 }
 
 
@@ -267,6 +290,94 @@
 .timeline img:hover {
   transform: scale(1.1); /* Zoom the image on hover */
 }
+
+
+.artist-section {
+  padding: 20px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.accordion {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.accordion-item {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  cursor: pointer;
+  background: #333; /* Ensure background is visible */
+}
+
+.accordion-item.active {
+  width: 400px;
+  height: auto; /* Ensure height adjusts to fit the iframe */
+}
+
+.artist-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active .artist-image {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.spotify-embed {
+  margin-top: 10px;
+  width: 100%;
+}
+
+
+
+
+
+
+/* Add this to your CSS file */
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.timeline-event {
+  opacity: 0; /* Ensure the elements are hidden by default */
+  transform: translateX(-100%); /* Ensure the elements start off-screen to the left */
+  transition: transform 1s ease-out, opacity 1s ease-out; /* Add transition for smoother effect */
+}
+
+.timeline-event.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
 
 
 
