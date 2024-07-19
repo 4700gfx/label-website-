@@ -6,8 +6,11 @@ import youtubeLogo from './assets/images/youtube.png';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Icons for the hamburger menu
 
 const Navbar = () => {
+
+  //State Management for If Hamburger Menu is Open
   const [isOpen, setIsOpen] = useState(false);
 
+  //Function to Open or Close Hamburger Menu
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -16,7 +19,7 @@ const Navbar = () => {
     <header className='nav-container'>
       <img src={logo} alt="logo" />
       <button className='hamburger-menu' onClick={toggleMenu} aria-label="Menu">
-        {isOpen ? <FaTimes /> : <FaBars />}
+        {isOpen ? <FaTimes /> : <FaBars />} 
       </button>
       <nav className={`nav-menu ${isOpen ? 'active' : ''}`}>
         <li>Home</li>

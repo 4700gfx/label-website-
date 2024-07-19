@@ -91,6 +91,7 @@
   background-repeat: no-repeat; /* Ensures the image doesn't repeat */
   padding: 20px; /* Adjust the padding as needed */
   color: var(--secondary-color); /* Ensures text color is readable */
+  z-index: 0; /* Ensure text is on the same level as the pseudo-element */
 }
 
 .mission-statement::before {
@@ -101,19 +102,118 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-  z-index: 1; /* Ensure the overlay is above the background image but below the text */
+  z-index: -1; /* Ensure the overlay is below the text */
+}
+
+.mission-statement h1, 
+.mission-statement p {
+  position: relative;
+  z-index: 1; /* Ensure text is above the overlay */
+}
+
+
+.mission-services-container {
+  padding: 20px;
+}
+
+.mission-statement {
+  padding: 20px;
+  background-color: var(--black-color);
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.mission-statement h1 {
+  font-size: 35px;
+  margin-top: 50px;
 }
 
 .mission-statement p {
-  position: relative;
-  z-index: 2; /* Ensure the text is above the overlay */
-  color: var(--secondary-color);
   font-size: 16px;
   margin: 15px auto;
-  margin-bottom: 100px;
   width: 50%;
+
 }
 
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.service-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.service-card .service-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: var(--secondary-color);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.service-card:hover img {
+  transform: scale(1.1);
+}
+
+.service-card:hover .service-info {
+  opacity: 1;
+}
+
+.service-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service-info p {
+  font-size: 16px;
+}
+
+.service-info button{
+  height: 30px;
+  width: 150px;
+  font-size: 15px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+
+}
+
+
+
+
+/* About Us Timeline Stylesheet */
+
+.about-intro{
+  color: var(--secondary-color);
+  margin: 10px auto;
+  width: 50%;
+}
 
 
 
@@ -124,7 +224,7 @@
   flex-wrap: nowrap; /* Ensure the events do not wrap to the next line */
   overflow-x: auto; /* Allow horizontal scrolling if necessary */
   padding: 20px 0;
-  width: 80%;
+  width: 95%;
   margin: 10px auto;
 }
 

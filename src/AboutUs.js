@@ -7,15 +7,14 @@ import thirdPic from './assets/images/team-pic.jpg';
 const AboutUs = () => {
   return (
     <section className="about-us-container">
-      <div className="mission-statement">
-      <h1>Mission Statement</h1>
-      <p>
-        4700 Enteprisess is a Multi-Media Company focused on developing and distributing genre bending and envelope pushing content. We specialize in Music Distrbution, Publishing and Promotion. Our Goal is to provide an ecosystem of quality music catalogs, content and products that continue to shape the current landscape of music. We work with artists, organizations and labels of different types and create different initiatives and products that will continue to disrupt but grow the current music industry.
-      </p>
-
-      </div>
 
       <h1>About Us</h1>
+
+      <p className='about-intro'>
+        4700 Enterprises started in 2017 with a vision and some ambition. Since then we have improved and built upon the foundations of this company. Through our 7 years we have released records, content and other things that help grow our company. Check out our About Us below:
+      </p>
+
+
       <div className="timeline">
         <div className="timeline-event">
           <div className="timeline-content">
@@ -44,7 +43,7 @@ const AboutUs = () => {
               Focusing in Publishing and Production, the label released a releases of Singles and Projects. Flacodoplis released to a warm accliam in late 2021. Timothy Branch realeased his debut single "YSYU". CJ also contributed releasing his debut project "Ups and Downs". 
              </p>
           </div>
-          <img src={thirdPic} alt="Recent Achievements" />
+          <img src={secondPic} alt="Recent Achievements" />
         </div>
 
 
