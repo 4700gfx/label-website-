@@ -15,15 +15,11 @@ const MissionStatement = () => {
   const [serviceRef4, serviceVisible4] = useIntersectionObserver({ threshold: 0.1 });
 
   return (
-    <section className={`mission-services-container ${sectionVisible ? 'animate' : ''}`} ref={sectionRef}>
+    <section className={`mission-services-container ${sectionVisible ? 'animate' : ''}`} ref={sectionRef} id='Services'>
       <div className="mission-statement">
-        <h1 className='center'>Mission Statement</h1>
-        <p>
-          4700 Enterprises is a Multi-Media Company focused on developing and distributing genre-bending and envelope-pushing content. We specialize in Music Distribution, Publishing, and Promotion. Our Goal is to provide an ecosystem of quality music catalogs, content, and products that continue to shape the current landscape of music. We work with artists, organizations, and labels of different types and create different initiatives and products that will continue to disrupt but grow the current music industry.
-        </p>
-      </div>
 
-      <h1>What Do We Offer</h1>
+        <h1 className='center'>What Do We Offer?</h1>
+      </div>
 
       <div className="service-container">
         <div className={`service-card ${serviceVisible1 ? 'animate' : ''}`} ref={serviceRef1}>

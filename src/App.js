@@ -4,7 +4,6 @@ import Navbar from './Navbar';
 import Home from './Home';
 import AboutUs from './AboutUs';
 import MissionStatement from './MissionStatement';
-import ArtistSection from './ArtistSection';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -21,9 +20,8 @@ const App = () => {
     <div>
         <Navbar></Navbar>
         <Home></Home>
-        <MissionStatement></MissionStatement>
         <AboutUs></AboutUs>
-        <ArtistSection></ArtistSection>
+        <MissionStatement></MissionStatement>
     </div>
   );
 };

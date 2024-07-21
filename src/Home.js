@@ -3,7 +3,7 @@ import videoSource from './assets/images/homevideo.mp4'; // Import your video fi
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <div className="home-container" id='Home'>
       <video className="video-background" autoPlay muted loop>
         <source src={videoSource} type="video/mp4" />
         Your browser does not support the video tag.
@@ -13,7 +13,7 @@ const Home = () => {
         <p>
         This is the 4700 Enterprises Website. Here you can find information on your favorite artist, releases and more!. Consider this as a hub for everything 4700! You can visit our offical Merch Store for 4700 Gear and Accesories. 
         </p>
-        <button>Learn More</button>
+        <button><a href='#Services'>Learn More</a></button>
       </div>
     </div>
   );

@@ -92,7 +92,7 @@
 .about-us-container h1{
   color: var(--secondary-color);
   font-size: 35px;
-  margin-top: 50px;
+
 }
 
 
@@ -100,32 +100,21 @@
   padding: 20px;
   background-color: var(--black-color);
   text-align: center;
-  height: 80vh;
+  height: 50vh;
+
+
 }
 
 
 
 .mission-statement {
-  position: relative;
-  background-image: url('./assets/images/vinyl.webp'); /* Use a high-resolution image */
-  background-size: cover; /* Adjusts the image to cover the entire background */
-  background-position: center; /* Centers the background image */
-  background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+  margin-bottom: -100px;
   padding: 20px; /* Adjust the padding as needed */
   color: var(--secondary-color); /* Ensures text color is readable */
   z-index: 0; /* Ensure text is on the same level as the pseudo-element */
+  height: 20vh;
 }
 
-.mission-statement::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-  z-index: -1; /* Ensure the overlay is below the text */
-}
 
 .mission-statement h1, 
 .mission-statement p {
@@ -136,6 +125,9 @@
 
 .mission-services-container {
   padding: 20px;
+  height: 50vh;
+  width: 95%;
+  margin: 10px auto 10px auto;
 }
 
 .mission-statement {
@@ -147,7 +139,7 @@
 
 .mission-statement h1 {
   font-size: 35px;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .mission-statement p {
@@ -241,14 +233,19 @@
 
 
 .timeline {
+  background-image: url('./assets/images/vinyl.webp'); /* Use a high-resolution image */
+  background-size: cover; /* Adjusts the image to cover the entire background */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Ensures the image doesn't repeat */
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: nowrap; /* Ensure the events do not wrap to the next line */
   overflow-x: auto; /* Allow horizontal scrolling if necessary */
+  border-radius: 20px;
   padding: 20px 0;
   width: 95%;
-  margin: 10px auto;
+  margin: 40px auto;
 }
 
 .timeline-event {
@@ -284,68 +281,11 @@
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s; /* Smooth transition for hover effect */
+  transition: transform 0.3s; 
 }
 
 .timeline img:hover {
-  transform: scale(1.1); /* Zoom the image on hover */
-}
-
-
-.artist-section {
-  padding: 20px;
-  text-align: center;
-  background-color: #000;
-  color: #fff;
-}
-
-.accordion {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.accordion-item {
-  position: relative;
-  width: 200px;
-  height: 300px;
-  overflow: hidden;
-  transition: width 0.3s ease;
-  cursor: pointer;
-  background: #333; /* Ensure background is visible */
-}
-
-.accordion-item.active {
-  width: 400px;
-  height: auto; /* Ensure height adjusts to fit the iframe */
-}
-
-.artist-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.accordion-item.active .artist-image {
-  transform: scale(1.1);
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-}
-
-.spotify-embed {
-  margin-top: 10px;
-  width: 100%;
+  transform: scale(1.1); 
 }
 
 
@@ -353,7 +293,8 @@
 
 
 
-/* Add this to your CSS file */
+
+/* Animations Section */
 
 @keyframes slide-in-left {
   0% {
@@ -367,9 +308,9 @@
 }
 
 .timeline-event {
-  opacity: 0; /* Ensure the elements are hidden by default */
-  transform: translateX(-100%); /* Ensure the elements start off-screen to the left */
-  transition: transform 1s ease-out, opacity 1s ease-out; /* Add transition for smoother effect */
+  opacity: 0; 
+  transform: translateX(-100%); 
+  transition: transform 1s ease-out, opacity 1s ease-out;
 }
 
 .timeline-event.animate {
@@ -379,7 +320,7 @@
 
 
 
-
+/* Media Queries for Responsive Design */
 
 @media (max-width: 1200px) {
   .text-overlay h1 {
@@ -428,7 +369,7 @@
   }
 
   .timeline-event {
-    width: 45%; /* Adjust as needed to fit two columns */
+    width: 45%; 
     margin: 10px;
   }
 

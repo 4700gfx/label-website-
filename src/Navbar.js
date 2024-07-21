@@ -22,12 +22,11 @@ const Navbar = () => {
         {isOpen ? <FaTimes /> : <FaBars />} 
       </button>
       <nav className={`nav-menu ${isOpen ? 'active' : ''}`}>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Latest Releases</li>
-        <li>Artist</li>
-        <li>Store</li>
-        <li>Contact Us</li>
+        <li><a href='#Home'>Home</a></li>
+        <li><a href='#AboutUs'>About Us</a></li>
+        <li><a href='#Artist'>Artist</a></li>
+        <li><a href='#Store'>4700 Store</a></li>
+        <li><a href='#ContactUs'>Contact Us</a></li>
       </nav>
       <div className='nav-buttons'>
         <img src={instagramLogo} alt="instagram logo" />

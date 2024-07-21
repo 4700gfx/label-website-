@@ -16,10 +16,16 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--black-color);
+}
+
+a{
+  text-decoration: none;
+  color: var(--secondary-color);
 }
 
 .nav-container {

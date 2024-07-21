@@ -40,11 +40,8 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <section className="about-us-container" ref={sectionRef}>
+    <section className="about-us-container" id='AboutUs' ref={sectionRef}>
       <h1>About Us</h1>
-      <p className='about-intro'>
-        4700 Enterprises started in 2017 with a vision and some ambition. Our story is embedded in many events.  Since then we have improved and built upon the foundations of this company. Through our 7 years we have released records, content, and other things that help grow our company. Check out our About Us below:
-      </p>
 
       <div className="timeline">
         <div className="timeline-event" ref={(el) => (timelineRefs.current[0] = el)}>
