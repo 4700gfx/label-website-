@@ -7,6 +7,7 @@ import MissionStatement from './MissionStatement';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ArtistSection from './ArtistSection';
 
 const App = () => {
   useEffect(() => {
@@ -21,7 +22,10 @@ const App = () => {
         <Navbar></Navbar>
         <Home></Home>
         <AboutUs></AboutUs>
+        <div className='main-section'>
         <MissionStatement></MissionStatement>
+        <ArtistSection></ArtistSection>
+        </div>
     </div>
   );
 };

@@ -21,7 +21,7 @@ const MissionStatement = () => {
         <h1 className='center'>What Do We Offer?</h1>
       </div>
 
-      <div className="service-container">
+      <div className="service-container" id='Services'>
         <div className={`service-card ${serviceVisible1 ? 'animate' : ''}`} ref={serviceRef1}>
           <img src={service1Img} alt="Service 1" />
           <div className="service-info">

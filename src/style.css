@@ -125,7 +125,6 @@
 
 .mission-services-container {
   padding: 20px;
-  height: 50vh;
   width: 95%;
   margin: 10px auto 10px auto;
 }
@@ -230,13 +229,13 @@
   font-size: 16.5px;
 }
 
-
+hr{
+  color: white;
+  width: 2px;
+}
 
 .timeline {
-  background-image: url('./assets/images/vinyl.webp'); /* Use a high-resolution image */
-  background-size: cover; /* Adjusts the image to cover the entire background */
-  background-position: center; /* Centers the background image */
-  background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -288,8 +287,117 @@
   transform: scale(1.1); 
 }
 
+.artist-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+}
 
 
+.artist-section h1{
+  color: white;
+  margin-bottom: 50px;
+}
+
+
+.image-accordion {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.image-container h1{
+  margin-bottom: 5px;
+}
+
+.accordion-image {
+  cursor: pointer;
+  width: 205px;
+  height: 340px;
+  border-radius: 5%;
+  margin: auto 15px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.accordion-image:hover{
+  opacity: .3;
+}
+
+
+.accordion-image.active {
+  transform: scale(1.1);
+}
+
+.hidden-content {
+  margin-top: 10px;
+  width: 325px; /* Adjust as needed */
+
+}
+
+.hidden-content p{
+  color: var(--secondary-color);
+  margin: 5px auto;
+}
+
+
+.image-wrapper:hover .hover-content {
+  opacity: 1;
+}
+
+
+.image-wrapper:hover .accordion-image {
+  transform: scale(1.1);
+}
+
+.hover-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.hover-content h2{
+  color: #ebe9e9;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-section{
+  height: 100vh;
+}
 
 
 

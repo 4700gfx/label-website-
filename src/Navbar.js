@@ -26,7 +26,7 @@ const Navbar = () => {
         <li><a href='#AboutUs'>About Us</a></li>
         <li><a href='#Artist'>Artist</a></li>
         <li><a href='#Store'>4700 Store</a></li>
-        <li><a href='#ContactUs'>Contact Us</a></li>
+        <li><a href='#AboutUs'>Services</a></li>
       </nav>
       <div className='nav-buttons'>
         <img src={instagramLogo} alt="instagram logo" />
