@@ -4,7 +4,7 @@ import React, { useRef, useEffect } from 'react';
 import firstPic from './assets/images/intro-pic.jpg';
 import secondPic from './assets/images/studio-pic.jpg';
 import thirdPic from './assets/images/team-pic.jpg';
-import MissionStatement from './MissionStatement';
+
 
 const AboutUs = () => {
   const sectionRef = useRef(null);

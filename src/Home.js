@@ -15,7 +15,6 @@ const Home = () => {
         </p>
         <button><a href='#AboutUs'>Learn More</a></button>
       </div>
-    <hr />
     </div>
   );
 };

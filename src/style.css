@@ -60,16 +60,20 @@
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
+  
 }
+
 
 .text-overlay h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  width: 50%;
+  margin: 10px auto;
 }
 
 .text-overlay p {
   font-size: 1.25rem;
-  width: 80%;
+  width: 75%;
   margin: 10px auto;
 }
 
@@ -80,12 +84,16 @@
   padding: 5px;
   border-radius: 10px;
   border: none;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
   margin-top: 25px;
   margin-inline-end: 20px;
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(1.4px);
+  border: 1px solid rgba(255, 255, 255, 0.64);
 
 }
+
 
 /* About Us Style Sheet */
 
@@ -206,14 +214,18 @@
 }
 
 .service-info button{
-  height: 30px;
-  width: 150px;
+  height: 35px;
+  width: 160px;
   font-size: 15px;
   margin-top: 15px;
   border: none;
   border-radius: 10px;
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(1.4px);
+  border: 1px solid rgba(255, 255, 255, 0.64);
+  text-align: center;
 
 }
 
@@ -221,21 +233,22 @@
 
 
 /* About Us Timeline Stylesheet */
+/* General reset for box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-.about-intro{
+.about-intro {
   color: var(--secondary-color);
   margin: 10px auto;
   width: 50%;
   font-size: 16.5px;
 }
 
-hr{
-  color: white;
-  width: 2px;
-}
-
+/* Timeline container */
 .timeline {
-
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -244,9 +257,12 @@ hr{
   border-radius: 20px;
   padding: 20px 0;
   width: 80%;
+  max-width: 100%; /* Ensure the container does not exceed the viewport width */
   margin: 40px auto;
+  overflow: hidden; /* Prevent overflow */
 }
 
+/* Timeline event */
 .timeline-event {
   display: flex;
   flex-direction: column;
@@ -254,6 +270,7 @@ hr{
   margin: 0 20px;
   flex-shrink: 0; /* Prevent shrinking */
   width: 300px; /* Set a fixed width for each event */
+  max-width: 90%; /* Ensure the events are responsive */
   transition: transform 0.3s; /* Smooth transition for hover effect */
 }
 
@@ -261,6 +278,7 @@ hr{
   transform: translateY(-10px); /* Lift the event on hover */
 }
 
+/* Timeline content */
 .timeline-content {
   background-color: white;
   padding: 20px;
@@ -274,6 +292,7 @@ hr{
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
 }
 
+/* Timeline image */
 .timeline img {
   width: 150px;
   height: 150px;
@@ -303,6 +322,16 @@ hr{
   margin-top: 35px;
 }
 
+.artist-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.artist-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .image-accordion {
   display: grid;
@@ -317,8 +346,7 @@ hr{
   align-items: center;
 }
 
-
-.image-container h1{
+.image-container h1 {
   margin-bottom: 5px;
 }
 
@@ -326,16 +354,15 @@ hr{
   cursor: pointer;
   width: 205px;
   height: 340px;
-  border-radius: 5%;
+  border-radius: 5%; /* Keep the border radius */
   margin: auto 15px;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.accordion-image:hover{
-  opacity: .3;
+.accordion-image:hover {
+  opacity: 0.3;
 }
-
 
 .accordion-image.active {
   transform: scale(1.1);
@@ -344,19 +371,23 @@ hr{
 .hidden-content {
   margin-top: 10px;
   width: 325px; /* Adjust as needed */
-
+  animation: fadeIn 0.5s ease-in-out;
 }
 
-.hidden-content p{
+.hidden-content p {
   color: var(--secondary-color);
   margin: 5px auto;
 }
 
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5%; /* Apply the same border radius here */
+}
 
 .image-wrapper:hover .hover-content {
   opacity: 1;
 }
-
 
 .image-wrapper:hover .accordion-image {
   transform: scale(1.1);
@@ -372,28 +403,36 @@ hr{
   transition: opacity 0.3s;
 }
 
-.hover-content h2{
+.hover-content h2 {
   color: #ebe9e9;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: black;
+  color: white;
 }
 
 button {
-  background-color: #007BFF;
-  color: white;
-  border: none;
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(1.4px);
+  border: 1px solid rgba(255, 255, 255, 0.64);
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-
-
-.image-wrapper {
-  position: relative;
-  overflow: hidden;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .main-section{
@@ -413,6 +452,17 @@ button {
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
