@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ArtistSection from './ArtistSection';
+import Footer from './Footer';
 
 const App = () => {
   useEffect(() => {
@@ -26,6 +27,7 @@ const App = () => {
         <MissionStatement></MissionStatement>
         <ArtistSection></ArtistSection>
         </div>
+        <Footer></Footer>
     </div>
   );
 };
