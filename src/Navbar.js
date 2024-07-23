@@ -29,9 +29,9 @@ const Navbar = () => {
         <li><a href='#AboutUs'>Services</a></li>
       </nav>
       <div className='nav-buttons'>
-        <img src={instagramLogo} alt="instagram logo" />
-        <img src={facebookLogo} alt="facebook logo" />
-        <img src={youtubeLogo} alt="youtube logo" />
+        <img src={instagramLogo} alt="instagram logo"><a href='https://www.instagram.com/4700enterprises/?hl=en'></a></img>
+        <img src={facebookLogo} alt="facebook logo"><a href='https://www.facebook.com/4700Enterprises/'></a></img>
+        <img src={youtubeLogo} alt="youtube logo"><a href='https://www.instagram.com/4700enterprises/?hl=en'></a></img>
       </div>
     </header>
   );
