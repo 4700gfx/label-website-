@@ -243,7 +243,7 @@ hr{
   overflow-x: auto; /* Allow horizontal scrolling if necessary */
   border-radius: 20px;
   padding: 20px 0;
-  width: 95%;
+  width: 80%;
   margin: 40px auto;
 }
 
