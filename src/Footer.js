@@ -11,20 +11,20 @@ const Footer = () => {
       <div class="footer-column">
         <h4>Main Website</h4>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Artist</a></li>
-          <li><a href="#">4700 Store</a></li>                                    
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#AboutUs">About Us</a></li>
+          <li><a href="#Artist">Artist</a></li>
+          <li><a href="#Store">4700 Store</a></li>                                    
         </ul>
       </div>
 
       <div class="footer-column">
         <h4>Services</h4>
         <ul>
-          <li><a href="#">Audio Production</a></li>
-          <li><a href="#">Music Catalog Management</a></li>
-          <li><a href="#">Music Distribution</a></li>
-          <li><a href="#">Music Promotion</a></li>                                    
+          <li><a href="#AboutUs">Audio Production</a></li>
+          <li><a href="#AboutUs">Music Catalog Management</a></li>
+          <li><a href="#AboutUs">Music Distribution</a></li>
+          <li><a href="#AboutUs">Music Promotion</a></li>                                    
         </ul>
       </div>
 
