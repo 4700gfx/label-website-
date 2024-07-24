@@ -540,7 +540,7 @@ button {
   .home-container{
     height: 650px;
     margin-bottom: 50px;
-    margin-top: -200px;
+    margin-top: -300px;
   }
 
   .text-overlay h1 {
@@ -589,9 +589,6 @@ button {
   .text-overlay{
     margin: 50px auto;
   }
-
-
-
   
   .text-overlay h1 {
     font-size: 1.2rem;
@@ -620,3 +617,4 @@ button {
     width: 100%;
   }
 }
+
