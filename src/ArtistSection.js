@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import Baloww from './assets/images/balow.png';
 import Kidd from './assets/images/kidd.png';
-import Chel from './assets/images/chel.png';
+import flacoRoyale from './assets/images/flaco.jpg';
 import Miik from './assets/images/2k.png';
 import BlackmonDon from './assets/images/black.png';
 import TimothyBranch from './assets/images/timothy.png';
@@ -25,9 +25,9 @@ const images = [
     artistLink: "https://linktr.ee/4700enterprises",
   },
   { 
-    artistName: 'Chel',
-    src: Chel,
-    bio: 'Chel is a Producer, Executive and Engineer from Miramar, Florida. His attention to detail and sharpness with Recording and Mixing has resulted in many releases',
+    artistName: 'Flaco Royale',
+    src: flacoRoyale,
+    bio: 'Flaco Royale is a Producer from Miami, Florida. His drum patterns and approach to production has resulted in a long career within the South Florida Scene. As one of the original producers of the label, his debut "Flacodopolis" continue to be a popular release till this day',
     iframe: "https://open.spotify.com/embed/track/6ewktf73V0QkmvKN791wJ1?utm_source=generator&theme=0",
     artistLink: "https://linktr.ee/4700enterprises", 
 
