@@ -580,6 +580,7 @@ button {
 
   .text-overlay{
     margin-top: 30px;
+    margin: 0px auto;
   }
 
   .text-overlay h1 {
