@@ -37,7 +37,7 @@
   position: relative;
   width: 80%;
   height: 90vh; /* Adjust height as needed */
-  margin: 10px auto;
+  margin: 0px auto;
 }
 
 .video-background {
@@ -570,6 +570,13 @@ button {
 }
 
 @media (min-width: 430px){
+
+  .home-container{
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: -20px;
+  }
+
 
   .text-overlay{
     margin-top: 30px;
