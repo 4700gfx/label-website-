@@ -78,7 +78,7 @@
   padding: 5px;
   border-radius: 10px;
   border: none;
-  margin-top: 25px;
+  margin-top: 10px;
   margin-inline-end: 20px;
   background: rgba(255, 255, 255, 0.45);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -568,6 +568,25 @@ button {
     opacity: 1;
   }
 }
+
+@media (min-width: 430px){
+  .text-overlay h1 {
+    font-size: 1.75rem;
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  .text-overlay p {
+    font-size: 0.875rem;
+    display: none;
+  }
+
+  .text-overlay button {
+    width: 130px;
+    font-size: 12px;
+  }
+}
+
 
 /* Animations Section */
 
