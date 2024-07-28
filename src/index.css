@@ -34,7 +34,6 @@ a {
   color: var(--secondary-color);
 }
 
-/* Navigation Container */
 .nav-container {
   display: flex;
   height: 75px;
@@ -95,106 +94,8 @@ a {
   cursor: pointer;
 }
 
-/* Footer Styles */
-.footer-container ul {
-  list-style: none;
-  padding: 20px 0;
-}
-
-.footer-container {
-  width: 90%;
-  background: rgba(255, 255, 255, 0.45);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.5px);
-  -webkit-backdrop-filter: blur(1.4px);
-  border: 1px solid rgba(255, 255, 255, 0.64);
-  border-radius: 25px;
-  padding: 20px;
-  margin: 10px auto 5px auto;
-  height: 20%;
-}
-
-.footer-row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.footer-column {
-  width: 25%;
-  padding: 0 15px;
-}
-
-.footer-column h4 {
-  font-size: 18px;
-  color: rgba(16, 22, 24);
-  text-transform: capitalize;
-  font-weight: 800;
-  position: relative;
-  margin: 15px 0px;
-}
-
-.footer-column h4::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  background-color: rgba(155, 155, 155);
-  height: 2px;
-  width: 50px;
-  box-sizing: border-box;
-}
-
-.footer-column ul li:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.footer-column ul li a {
-  font-family: "Poppins", sans-serif;
-  font-size: 13px;
-  text-transform: capitalize;
-  color: white;
-  text-decoration: none;
-  font-weight: 300;
-  display: block;
-  transition: all 0.3s ease;
-}
-
-.footer-column ul li a:hover {
-  color: rgba(82, 121, 111);
-  padding-left: 10px;
-}
-
-.footer-column .footer-social-links a {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-color: rgba(6, 12, 20);
-  margin: 0px 10px 10px 0px;
-  text-align: center;
-  line-height: 45px;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-}
-
-.footer-column .footer-social-links img {
-  margin-top: 12px;
-  height: 15px;
-  width: 15px;
-}
-
-.footer-social-links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer-column .footer-social-links a:hover {
-  background-color: rgba(134, 134, 137);
-}
-
 /* Responsive Styles */
 
-/* Medium Devices (1200px and down) */
 @media (max-width: 1200px) {
   .nav-container {
     width: 90%;
@@ -211,7 +112,6 @@ a {
   }
 }
 
-/* Small Devices (820px and down) */
 @media (max-width: 820px) {
   .nav-container {
     flex-direction: row;
@@ -260,7 +160,6 @@ a {
   }
 }
 
-/* Extra Small Devices (768px and down) */
 @media (max-width: 768px) {
   .nav-container {
     width: 100%;
@@ -285,7 +184,6 @@ a {
   }
 }
 
-/* Ultra Small Devices (480px and down) */
 @media (max-width: 480px) {
   .nav-container {
     flex-direction: row;

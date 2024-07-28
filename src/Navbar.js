@@ -7,10 +7,10 @@ import { FaBars, FaTimes } from 'react-icons/fa'; // Icons for the hamburger men
 
 const Navbar = () => {
 
-  //State Management for If Hamburger Menu is Open
+  // State Management for If Hamburger Menu is Open
   const [isOpen, setIsOpen] = useState(false);
 
-  //Function to Open or Close Hamburger Menu
+  // Function to Open or Close Hamburger Menu
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -29,9 +29,9 @@ const Navbar = () => {
         <li><a href='#AboutUs'>Services</a></li>
       </nav>
       <div className='nav-buttons'>
-        <a href='https://www.instagram.com/4700enterprises/?hl=en' target='blank'><img src={instagramLogo} alt="instagram logo"></img></a>
-        <a href='https://www.facebook.com/4700Enterprises/' target='blank'><img src={facebookLogo} alt="facebook logo"></img></a>
-       <a href='https://www.instagram.com/4700enterprises/?hl=en' target='blank'> <img src={youtubeLogo} alt="youtube logo"></img></a>
+        <a href='https://www.instagram.com/4700enterprises/?hl=en' target='_blank' rel='noopener noreferrer'><img src={instagramLogo} alt="instagram logo"></img></a>
+        <a href='https://www.facebook.com/4700Enterprises/' target='_blank' rel='noopener noreferrer'><img src={facebookLogo} alt="facebook logo"></img></a>
+        <a href='https://www.instagram.com/4700enterprises/?hl=en' target='_blank' rel='noopener noreferrer'><img src={youtubeLogo} alt="youtube logo"></img></a>
       </div>
     </header>
   );
