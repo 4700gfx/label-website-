@@ -49,6 +49,11 @@ a {
   backdrop-filter: blur(4.5px);
   -webkit-backdrop-filter: blur(1.4px);
   border: 1px solid rgba(255, 255, 255, 0.64);
+  transition: height 0.3s ease;
+}
+
+.nav-container.expanded {
+  height: 300px; /* Adjust as needed */
 }
 
 .nav-container img {
@@ -189,6 +194,7 @@ a {
     flex-direction: row;
     width: 100%;
     padding: 5px;
+    height: 100%;
   }
 
   .nav-container img {
@@ -197,6 +203,7 @@ a {
 
   .nav-menu {
     display: none;
+    width: 100%;
   }
 
   .nav-menu.active {
@@ -215,6 +222,10 @@ a {
     font-size: 12px;
     padding: 5px 8px;
     text-align: center;
+  }
+
+  .nav-buttons{
+    flex-direction: row;
   }
 
   .hamburger-menu {
